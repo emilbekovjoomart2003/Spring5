@@ -26,8 +26,8 @@ public class Instructor {
     private String email;
 
     private String specialization;
-
-    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE,},fetch = FetchType.LAZY)
-    private Course course;
+//
+//    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE,},fetch = FetchType.LAZY)
+//    private Course course;
 
 }

@@ -24,16 +24,16 @@ public class Course {
 
     private String description;
 
-    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE},fetch = FetchType.LAZY)
-    private Company company;
-
-    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "courses")
-    private List<Group> groups;
-
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "course")
-    private List<Instructor> instructor;
-
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "course")
-    private List<Lesson> lessons;
+//    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE},fetch = FetchType.LAZY)
+//    private Company company;
+//
+//    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "courses")
+//    private List<Group> groups;
+//
+//    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "course")
+//    private List<Instructor> instructor;
+//
+//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "course")
+//    private List<Lesson> lessons;
 
 }

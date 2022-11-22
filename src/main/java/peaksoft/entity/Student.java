@@ -26,10 +26,10 @@ public class Student {
 
     private String email;
 
-    @Enumerated(EnumType.STRING)
-    private StudyFormat studyFormat;
-
-    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE},fetch = FetchType.LAZY)
-    private Group group;
+//    @Enumerated(EnumType.STRING)
+//    private StudyFormat studyFormat;
+//
+//    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE},fetch = FetchType.LAZY)
+//    private Group group;
 
 }

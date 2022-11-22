@@ -25,16 +25,16 @@ public class Group {
 
     private String image;
 
-
-    @ManyToMany(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE}, fetch = FetchType.LAZY)
-    @JoinTable(
-            name = "groups_course",
-            joinColumns = @JoinColumn(name = "course_id"),
-            inverseJoinColumns = @JoinColumn(name = "group_id"))
-    private List<Course> courses;
-
-
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "group")
-    private List<Student> students;
+//
+//    @ManyToMany(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE}, fetch = FetchType.LAZY)
+//    @JoinTable(
+//            name = "groups_course",
+//            joinColumns = @JoinColumn(name = "course_id"),
+//            inverseJoinColumns = @JoinColumn(name = "group_id"))
+//    private List<Course> courses;
+//
+//
+//
+//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "group")
+//    private List<Student> students;
 }

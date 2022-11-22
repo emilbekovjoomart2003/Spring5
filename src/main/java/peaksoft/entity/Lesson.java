@@ -21,9 +21,9 @@ public class Lesson {
 
     private String name;
 
-    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE},fetch = FetchType.LAZY)
-    private Course course;
-
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "lesson")
-    private List<Task> tasks;
+//    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH, CascadeType.MERGE},fetch = FetchType.LAZY)
+//    private Course course;
+//
+//    @OneToMany(cascade = CascadeType.ALL,mappedBy = "lesson")
+//    private List<Task> tasks;
 }

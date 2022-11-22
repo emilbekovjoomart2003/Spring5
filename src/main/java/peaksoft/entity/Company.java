@@ -15,14 +15,14 @@ import java.util.List;
 @NoArgsConstructor
 public class Company {
 
-    @Id
+   @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
 
     private String locatedCountry;
-
-   @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER, mappedBy = "company")
-   private List<Course> courses;
+//
+//   @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER, mappedBy = "company")
+//   private List<Course> courses;
 }

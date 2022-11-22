@@ -25,7 +25,7 @@ public class Task {
     private String taskTest;
 
     private LocalDate deadline;
-
-    @ManyToOne(cascade = {REFRESH, DETACH, MERGE},fetch = FetchType.LAZY)
-    private Lesson lesson;
+//
+//    @ManyToOne(cascade = {REFRESH, DETACH, MERGE},fetch = FetchType.LAZY)
+//    private Lesson lesson;
 }
